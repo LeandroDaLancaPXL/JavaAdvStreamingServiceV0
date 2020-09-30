@@ -10,9 +10,13 @@ public class Account {
     private List<Profile> profiles;
 
     public Account(String email, String password) {
-        Profile profile1 = new Profile();
+        Profile profile1 = new Profile("onbekend");
         this.email = email;
         this.password = password;
+    }
+
+    public boolean verifyPassword(String password) {
+        return true;
     }
 
     public Profile getFirstProfile() {

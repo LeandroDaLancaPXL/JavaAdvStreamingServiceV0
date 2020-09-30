@@ -8,6 +8,10 @@ public class Profile {
     private String name;
     private LocalDate dateOfBirth;
 
+    public Profile(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
