@@ -9,8 +9,10 @@ public class Account {
     private StreamingPlan streamingPlan;
     private List<Profile> profiles;
 
-    public Account() {
+    public Account(String email, String password) {
         Profile profile1 = new Profile();
+        this.email = email;
+        this.password = password;
     }
 
     public Profile getFirstProfile() {
